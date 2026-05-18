@@ -10,23 +10,47 @@
   <h1>Login Form</h1>
 
   <form id="loginForm">
-    <input type="text" placeholder="Username" id="username" />
+
+    <input
+      type="text"
+      placeholder="Username"
+      id="username"
+      value=""
+    />
+
     <br><br>
 
-    <input type="password" placeholder="Password" id="password" />
+    <input
+      type="password"
+      placeholder="Password"
+      id="password"
+      value=""
+    />
+
     <br><br>
+
     <input type="checkbox" id="checkbox" />
+
     <label for="checkbox">Remember me.</label>
+
     <br><br>
-    <input type="submit" id="submit" value="Submit" />
+
+    <input
+      type="submit"
+      id="submit"
+      value="Submit"
+    />
+
   </form>
+
   <br>
 
-  <button id="existing" style="display:none;">
+  <button id="existing" hidden>
     Login as existing user
   </button>
-	
+
   <script src="./script.js"></script>
 
 </body>
+
 </html>

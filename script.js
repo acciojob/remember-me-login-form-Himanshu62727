@@ -6,12 +6,23 @@ const existingBtn = document.getElementById("existing");
 const savedUsername = localStorage.getItem("username");
 const savedPassword = localStorage.getItem("password");
 
+
 if (savedUsername && savedPassword) {
   existingBtn.style.display = "block";
+
+  username.value = savedUsername;
+  password.value = savedPassword;
+
+  checkbox.checked = true;
 }
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
+
+  if (username.value === "" || password.value === "") {
+    alert("Please fill all fields");
+    return;
+  }
 
   alert(`Logged in as ${username.value}`);
 
